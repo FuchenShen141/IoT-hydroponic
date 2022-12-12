@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>test3</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-secondary text-uppercase" id="mainNav">
+        <div class="container"><a class="navbar-brand" href="#page-top">Illumination and Irrigation</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler text-white bg-primary navbar-toggler-right text-uppercase rounded" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="index.html">HOme</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="text-center text-white bg-primary masthead"><img class="img-fluid d-block mx-auto mb-5" src="assets/img/portfolio/Green_Butter_Farm.jpg" width="600" height="600">
+        <div class="container"><hr class="rounded"></div>
+        <div class="container"><div class="container">
+    <head>
+      <title>Image Display Test</title>
+      <script type="text/javascript">
+        function showImage(elem) {
+          document.getElementById("display-frame").src = elem.nextElementSibling.src;
+        }
+      </script>
+    </head>
+</div>
+    <body> 
+        
+        
+        <script>function timedRefresh(timeoutPeriod){
+                setTimeout("location.reload(true);",timeoutPeriod)
+            }
+            window.onload=timedRefresh(1500)
+        </script>
+        <h6> Current Water Level:&nbsp; &nbsp;&nbsp; &nbsp;0%&nbsp;&nbsp;<progress max="100" value={{WaterLevel}}></progress>&nbsp;&nbsp;100%&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;Environment Temperature: &nbsp;&nbsp; {{WaterTemp}} °C</h6><br>
+    </body>
+    <body> 
+        <script type="text/javascript">
+            var clockElement = document.getElementById('clock');
+            function clock() {
+                clockElement.textContent = new Date().toString();
+            }
+            setInterval(clock, 1000);
+        </script>
+        <span id="clock"></span>
+        
+        <h3>&nbsp;&nbsp;Power&nbsp;&nbsp;&nbsp;&nbsp;<a href="/manual/power/1" button class="btn btn-primary {{IsOn}}" type="button" style="color: var(--white);">&nbsp;On&nbsp;</button></a><a href="/manual/power/0" button class="btn btn-primary {{IsOff}}" type="button" style="color: var(--white);">&nbsp;Off&nbsp;</button></a>&nbsp;&nbsp;</h3>
+        <h3>&nbsp;&nbsp;Valve&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/manual/valve/1" button class="btn btn-primary {{IsValve1}}" type="button" style="color: var(--white);">On&nbsp;</button></a><a href="/manual/valve/0" button class="btn btn-primary {{IsValve0}}" type="button">&nbsp;Off</button></a>&nbsp;&nbsp;</h3>
+        <h3>&nbsp;&nbsp;Lights&nbsp;&nbsp;&nbsp;&nbsp;<a href="/manual/lights/1" button class="btn btn-primary {{IsLights1}}" type="button" style="color: var(--white);">&nbsp;On&nbsp;</button></a><a href="/manual/lights/0" button class="btn btn-primary {{IsLights0}}" type="button">&nbsp;Off&nbsp;</button></a>&nbsp;&nbsp;</h3>
+    </body>
+
+
+
+
+
+
+
+</div>
+        <div class="container">
+            <h1></h1><hr class="rounded">
+        </div>
+    </header>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/freelancer.js"></script>
+</body>
+
+</html>
