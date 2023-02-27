@@ -1,0 +1,15 @@
+1. Access to your Raspberrypi
+2. Install Ngrok by:
+wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip
+
+3. Unzip it by:
+unzip ngrok-stable-linux-arm.zip
+
+4. Check whether Ngrok is installed correctly
+./ngrok --version
+
+5. Add your Ngrok Account authtoken:
+./ngrok authtoken [YOUR AUTH TOKEN]
+
+6. Run Ngrok with your website by:
+./ngrok http [YOUR PORT NUMBER]
